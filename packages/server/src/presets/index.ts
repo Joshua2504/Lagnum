@@ -13,7 +13,7 @@ export const INT: string = 'int'
 export const DEX: string = 'dex'
 
 export const MAXHP_CURVE = {
-    start: 741,
+    start: 1000,
     end: 7467
 }
 export const MAXSP_CURVE = {

@@ -18,12 +18,12 @@ function sendMessage(obj: { message: string, map: RpgMap, player?: RpgPlayer, ty
 
 export const player: RpgPlayerHooks = {
     onJoinMap(player: RpgPlayer, map: RpgMap) {
-        sendMessage({
-            message: `${player.name} join this map`, 
-            map, 
-            player,
-            type: 'info'
-        })
+        // sendMessage({
+        //     message: `${player.name} joined this map`, 
+        //     map, 
+        //     player,
+        //     type: 'info'
+        // })
         player.off('chat-message')
         player.on('chat-message', (message) => {
             sendMessage({
@@ -34,11 +34,11 @@ export const player: RpgPlayerHooks = {
         })
     },
     onLeaveMap(player: RpgPlayer, map: RpgMap) {
-        sendMessage({
-            message: `${player.name} left this map`, 
-            map, 
-            player,
-            type: 'info'
-        })
+        // sendMessage({
+        //     message: `${player.name} left this map`, 
+        //     map, 
+        //     player,
+        //     type: 'info'
+        // })
     }
 }

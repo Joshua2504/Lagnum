@@ -4,9 +4,9 @@ modules = [
     '@rpgjs/default-gui',
     '@rpgjs/plugin-emotion-bubbles',
     '@rpgjs/gamepad',
-   # '@rpgjs/mobile-gui'
-   # '@rpgjs/chat',
-   # '@rpgjs/title-screen'
+    '@rpgjs/mobile-gui',
+    '@rpgjs/chat',
+    '@rpgjs/title-screen'
 ]
 
 spritesheetDirectories = []
@@ -17,7 +17,7 @@ spritesheetDirectories = []
     hitbox = [32, 32]
 
 [titleScreen]
-  mongodb = 'mongodb://localhost:27017/rpg'
+  mongodb = "mongodb://regnumparadise:GQELVqRP2oEp0OFi@krakatau.treudler.net:3308/?retryWrites=true&w=majority&appName=regnumparadise"
 
 [pwa]
   includeAssets = ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg']

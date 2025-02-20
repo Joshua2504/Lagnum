@@ -5,7 +5,7 @@ const sprite: RpgSpriteHooks = {
         sprite.eventMode = 'static'
         sprite.on('click', (event) => {
             console.log('ok')
-            //console.log(event)
+            // console.log(event)
         })
     }
 }

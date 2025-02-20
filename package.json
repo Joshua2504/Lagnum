@@ -47,7 +47,7 @@
     "watch:compiler": "cd packages/compiler && npm run watch",
     "watch:agones-mm": "cd packages/plugins/agones/matchmaker && npm run watch",
     "dev:watch": "concurrently -n rpgjs \"npm:watch:*\"",
-    "dev": "concurrently -n rpgjs,sample \"npm:watch:*\" \"cd packages/sample && npm run dev\"",
+    "dev": "concurrently -n rpgjs,sample2 \"npm:watch:*\" \"cd packages/sample2 && npm run dev\"",
     "dev:doc": "cd docs && npm run dev",
     "doc:build": "cd docs && npm run build",
     "fix-esm": "tsc-esm-fix  --target='packages/*/lib/**/*.js' --dirnameVar=false && tsc-esm-fix  --target='packages/plugins/agones/matchmaker/lib/*.js'"
